@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database: mysql
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      # 운영에서는 절대 None 이외에 옵션들을 사용하지 말 것.
+    properties:
+      hibernate:
+        format_sql: false
+  # default_batch_fetch_size: 10
+  datasource:
+    username: root
+    url: jdbc:mysql://mysql:3306/portfolio
+    password: ENC(5Q0kblP/F+yDvz11YgjH+byOIIpu/AuA)
+    driver-class-name: com.mysql.cj.jdbc.Driver
